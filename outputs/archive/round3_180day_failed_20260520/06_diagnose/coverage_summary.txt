@@ -1,0 +1,16 @@
+n_replicates       : 10
+n_posterior_samples: 5000
+
+95 % posterior credible interval coverage per parameter:
+  (well-calibrated -> ~0.95)
+
+  log_kw          coverage = 0.80   NARROW
+  log_kh          coverage = 0.90   OK
+  log_alpha       coverage = 0.80   NARROW
+  log_kd          coverage = 1.00   WIDE
+  log_ke          coverage = 1.00   WIDE
+  m_crit          coverage = 1.00   WIDE
+  q_burst         coverage = 1.00   WIDE
+  Q_max           coverage = 1.00   WIDE
+
+mean coverage across params: 0.938

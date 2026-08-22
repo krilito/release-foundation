@@ -1,0 +1,20 @@
+n_samples                : 2000
+t_grid                   : (0.0, 90.0, 64)
+NaN in Q                 : False
+Inf in Q                 : False
+
+flat (range < 0.05)      : 0  (0.0%)
+immediate saturation     : 606  (30.3%)
+never rises              : 0  (0.0%)
+any degenerate           : 606  (30.3%)
+
+q_burst obs   median     : 0.1527
+Q_max obs     median     : 0.7487
+dynamic range median     : 0.5959
+t_50 median (days)       : 5.71
+max slope median /day    : 0.1104
+
+ADR-012 decision rule:
+  degen < 10%  -> prior is fine; go back to architecture investigation
+  10-30%       -> narrow prior corners that produce degeneracy
+  > 30%        -> prior fundamentally misspecified; rederive bounds

@@ -1,0 +1,64 @@
+# Phase 1 configuration. Owned by configs/, never duplicated in code.
+# Each block names the module that consumes it.
+
+simulator:
+  name: PLGABiphasic
+  rtol: 1.0e-5
+  atol: 1.0e-6
+  method: dopri5     # adaptive Runge-Kutta 4(5); switch to bosh3 if stiffness arises
+
+# Real-data layer
+data:
+  csv_path: data/Dataset_17_feat_augmented.csv
+  formulation_col: Formulation_ID
+  time_col: Time_days
+  release_col: Release
+  descriptor_cols: null     # null = take all non-{id, time, release} columns
+
+# Amortized SBI synthetic training set
+synthetic:
+  n_pairs: 50000             # increase to 100k once Phase 1 loop is stable
+  t_grid_days:
+    # Reverted from 180/128 back to 90/64 after ADR-011 reversal.
+    # The 180-day extension diluted SNR by adding 60-80 % redundant
+    # post-saturation tail, dropping SBC from 2/8 to 0/8. See ADR-012.
+    start: 0.0
+    end: 90.0
+    n: 64
+  seed: 0
+
+# Encoder (MLP) — populated in Day 4
+encoder:
+  name: MLP
+  hidden_dims: [128, 128]
+  embed_dim: 64
+  dropout: 0.1
+
+# Posterior network — see ADR-010 (embedding) and ADR-014 (obs noise)
+posterior:
+  flow_type: maf             # masked autoregressive flow
+  hidden_features: 64
+  num_transforms: 5
+  # FCEmbedding params (compress 64-D Q -> 16-D summary for the flow)
+  embedding_output_dim: 16
+  embedding_hidden: 64
+  embedding_layers: 3
+  # Observation noise: mandatory for NPE-SBC on deterministic simulators.
+  # Real PLGA curves carry ~2-5 % measurement noise; 0.03 is the centre.
+  noise_sigma: 0.03
+
+# Training — populated in Day 5
+train:
+  batch_size: 256
+  max_epochs: 200
+  lr: 5.0e-4
+  weight_decay: 0.0
+  early_stopping_patience: 20
+  seed: 0
+
+# Grouped-holdout evaluation — populated in Day 7
+eval:
+  group_by: Formulation_ID
+  n_splits: 5
+  random_state: 0
+  stratify_on_la_ga: true

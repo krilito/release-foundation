@@ -1,0 +1,10 @@
+object,category,current_pressure,recommended_action,reason_short
+NC / Bannigan,benchmark rival,high,fight now,Direct sparse-prefix benchmark rival
+explainable LAI few-shot,benchmark rival,medium-high,fight now,Competes on early-observation to future-release forecasting
+larger-scale PLGA supervised predictor,benchmark rival,medium-high,fight now,Threatens PLGA-side method credit and baseline strength
+liposome IVR workflow,infrastructure/workflow,medium,borrow now,Best non-PLGA workflow bridge and shared-interface borrow target
+Scientific Data / AI-ready release data,infrastructure,medium,borrow now,Defines data/schema expectations without directly owning model slot
+computational pharmaceutics / hybrid modeling,scientific framing,medium,borrow now,Provides stronger scientific language than black-box regression framing
+FormulationLAI,platform threat,high,defend now,Competes for utility and formulation-platform narrative
+FormulationAI,platform threat,high,defend now,Competes for workflow and decision-support positioning
+active-learning / optimization systems,platform threat,medium-high,defend selectively,May not beat benchmark now but can outcompete on platform usefulness

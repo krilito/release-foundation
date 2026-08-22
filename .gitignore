@@ -1,0 +1,54 @@
+# Outputs and run artifacts (regeneratable). Archived runs under
+# outputs/archive/ are *intentionally tracked* as evidence supporting
+# decisions in DECISIONS.md — see ADR-008.
+outputs/*
+!outputs/archive/
+outputs_active_observer*/
+wandb/
+sbi-logs/
+*.pt
+*.pth
+*.pkl
+*.ckpt
+lightning_logs/
+
+# Real data (regeneratable / external)
+data/**
+!data/
+!data/.gitkeep
+
+# External reference assets (not part of the tracked codebase)
+_external/
+
+# Stale full-repo clone created by accident (leading double-dot dir name).
+# Never commit it; delete from working tree when no longer needed.
+..release-foundation-worldmodel/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version-local
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.pyright/
+
+# Editors
+.claude/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# uv
+uv.lock
+
+# Local optimization run outputs
+optimize/outputs/

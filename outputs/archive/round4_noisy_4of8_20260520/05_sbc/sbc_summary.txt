@@ -1,0 +1,25 @@
+n_sbc                  : 300
+n_posterior_samples    : 1000
+seed                   : 42
+
+per-parameter KS p-values (uniform-rank test):
+  >0.05 = consistent with uniform = calibrated
+
+  log_kw          KS p = 0.0145   FAIL
+  log_kh          KS p = 0.0558   PASS
+  log_alpha       KS p = 0.0345   FAIL
+  log_kd          KS p = 0.8266   PASS
+  log_ke          KS p = 0.1328   PASS
+  m_crit          KS p = 0.0007   FAIL
+  q_burst         KS p = 0.8006   PASS
+  Q_max           KS p = 0.0093   FAIL
+
+Overall: AT LEAST ONE FAIL
+
+check_sbc raw stats:
+  ks_pvals: tensor([1.4521e-02, 5.5759e-02, 3.4526e-02, 8.2656e-01, 1.3279e-01, 6.5141e-04,
+        8.0064e-01, 9.2996e-03])
+  c2st_ranks: tensor([0.5383, 0.4800, 0.5317, 0.5117, 0.4683, 0.5417, 0.4950, 0.5283],
+       dtype=torch.float64)
+  c2st_dap: tensor([0.5350, 0.4983, 0.4917, 0.5133, 0.4983, 0.5450, 0.4867, 0.5233],
+       dtype=torch.float64)

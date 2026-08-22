@@ -1,0 +1,15 @@
+INF,DeleteOEM,DeleteVersion,DeleteDate,KeepOEM,KeepVersion,KeepDate,Provider,Class
+ahflt.inf,oem1.inf,08/05/2024 6.54.29.701,,oem65.inf,10/09/2024 7.56.57.127,,Microsoft,ActivityMonitor
+amdacpbus.inf,oem25.inf,05/22/2024 6.0.0.91,,oem39.inf,08/06/2024 6.0.0.95,,AMD,System
+armourycratecontrolinterface.inf,oem92.inf,08/29/2025 1.2.0.0,,oem94.inf,03/02/2026 1.2.0.2,,ASUSTek Computer Inc.,System
+asussci2.inf,oem42.inf,03/27/2026 3.1.62.0,,oem5.inf,04/21/2026 3.1.64.0,,ASUSTeK COMPUTER INC.,System
+asussci2.inf,oem58.inf,06/17/2025 3.1.45.0,,oem5.inf,04/21/2026 3.1.64.0,,ASUSTeK COMPUTER INC.,System
+netrtwlane601.inf,oem63.inf,05/06/2024 6001.15.152.100,,oem83.inf,10/25/2024 6001.15.155.1,,Realtek Semiconductor Corp.,Net
+nvhda.inf,oem32.inf,11/24/2024 1.4.2.6,,oem81.inf,09/28/2024 1.4.3.2,,NVIDIA Corporation,MEDIA
+nvhda.inf,oem33.inf,01/19/2023 1.3.40.14,,oem81.inf,09/28/2024 1.4.3.2,,NVIDIA Corporation,MEDIA
+nvpcf.inf,oem55.inf,11/24/2024 32.0.15.6549,,oem89.inf,03/30/2025 32.0.15.7582,,NVIDIA,SoftwareDevice
+nvpcf.inf,oem27.inf,09/20/2023 31.0.15.4570,,oem89.inf,03/30/2025 32.0.15.7582,,NVIDIA,SoftwareDevice
+nvpcf.inf,oem26.inf,01/22/2023 31.0.15.3082,,oem89.inf,03/30/2025 32.0.15.7582,,NVIDIA,SoftwareDevice
+nvvad.inf,oem43.inf,09/22/2022 4.49.0.0,,oem64.inf,02/28/2024 4.65.0.3,,NVIDIA,MEDIA
+prhiddrv.inf,oem6.inf,02/24/2023 1.0.11.0,,oem82.inf,02/20/2024 1.0.16.0,,"Parade Technologies, Ltd.",System
+rt68cx21x64.inf,oem73.inf,12/06/2022 1168.11.1206.2022,,oem80.inf,11/18/2024 1168.22.1118.2024,,Realtek,Net

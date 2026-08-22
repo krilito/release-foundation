@@ -1,0 +1,16 @@
+[05] loading posterior from outputs\04_curve_posterior\posterior.pt
+[05] training log: {'n_simulations': 50000, 'batch_size': 256, 'max_epochs': 200, 'seed': 0, 'epochs_trained': 201, 'best_val_log_prob': None}
+[05] drawing 300 SBC replicates...
+[05] running SBC (1000 posterior samples per replicate)...
+[05] wrote outputs\05_sbc\rank_histograms.png
+[05] wrote outputs\05_sbc\sbc_summary.txt
+
+=== SBC summary ===
+  log_kw          KS p = 0.0000   FAIL
+  log_kh          KS p = 0.0000   FAIL
+  log_alpha       KS p = 0.0039   FAIL
+  log_kd          KS p = 0.0000   FAIL
+  log_ke          KS p = 0.0003   FAIL
+  m_crit          KS p = 0.1096   PASS
+  q_burst         KS p = 0.0000   FAIL
+  Q_max           KS p = 0.0000   FAIL

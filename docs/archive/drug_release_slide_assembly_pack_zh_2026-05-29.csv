@@ -1,0 +1,11 @@
+page,title,subtitle,layout,left_or_top_content,right_or_bottom_content,primary_asset,secondary_asset,footer_note
+1,我们不该再把这件事讲成一个更强的 PLGA predictor,更值得占的位置是 shared release-intelligence stack,单页强结论版式,一句主判断和两句反判断,可选放小概念图,outputs/91_release_paper_figures/figure1/figure1_problem_framing.png,,先改框架不是给细节
+2,外面现在不是一个对手而是三种压力,benchmark / platform / infrastructure,三栏版式,benchmark rival 栏,platform threat 和 infrastructure borrowing 栏,docs/drug_release_battlecard_zh_2026-05-29.csv,outputs/92_release_strategy_figures/competitor_landscape/competitor_landscape.png,先拆战场不急着说输赢
+3,我们当前最硬的 moat 在 L2-L3 不在平台层,object/benchmark 层领先 L5 仍保守,左图右结论,stack occupancy panel,四条核心结论,outputs/92_release_strategy_figures/stack_occupancy/stack_occupancy_panel.png,outputs/109_release_stack_occupancy_comparison/stack_layer_advantage_summary.csv,讲清楚赢在哪一层
+4,PLGA audited core 早期释放是真主信号,middle object 不是装饰,整图加右侧短注释,Figure 2 主图,三条短注释,outputs/91_release_paper_figures/figure2/figure2_plga_core.png,outputs/82_release_capability_snapshot/summary.txt,这是科学地基页
+5,Liposome bridge 这已经不是一个 PLGA-only 故事,shared interface survives a first non-PLGA bridge,整图加下方 caveat,Figure 4 主图,一句 route-dependent caveat,outputs/91_release_paper_figures/figure4/figure4_liposome_bridge.png,outputs/82_release_capability_snapshot/summary.txt,不要讲成 complete validation
+6,统一可以但不能乱统一,统一的是接口对象和 reporting semantics,左右对照版式,现在能统一什么,现在不能统一什么,docs/unified_release_intelligence_contract_2026-05-29.md,outputs/91_release_paper_figures/figure1/figure1_problem_framing.png,这是大胆但不越界核心页
+7,现在最不能乱吹的是 universal t80,当前更成熟的是 shape-aware target layer,左表右结论,threshold target scorecard,三条 timing vs shape 结论,outputs/104_release_threshold_target_summary/threshold_target_scorecard.csv,outputs/106_release_target_registry/registry_summary.csv,防止脑补成 timing 都通了
+8,外部对象怎么处理 打借防,不同外部对象不该用同一套应对策略,三栏行动版式,fight 栏,borrow 和 defend 栏,docs/drug_release_battlecard_zh_2026-05-29.csv,docs/drug_release_battlecard_zh_2026-05-29.md,这是资源分配页
+9,现在最值钱的下一步不是再多一个 PLGA cell,把项目从强 benchmark paper 推到 decision-support stack,纵向优先级版式,Priority 1,Priority 2 和 3,docs/route_consistent_uq_duration_shape_gap_2026-05-29.md,outputs/89_release_uq_timescale_gap_snapshot/summary.txt,这是资源投向页
+10,最后一句 我们到底在占什么位置,当前最完整的 shared release-intelligence stack,结论页,一句主结论,三条收口 bullet,,,让听众带着怎么继续补 stack 离场
